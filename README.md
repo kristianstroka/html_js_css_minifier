@@ -11,7 +11,7 @@ Start by cloning or downloading the source files.
 Clone the repo using Git:
 
 ```bash
-git clone https://github.com/kristianstroka/html_js_css_minifier.git
+git clone git@github.com:kristianstroka/html_js_css_minifier.git
 ```
 
 ### First install
