@@ -39,9 +39,13 @@ gulp.task('sass_styles', function () {
     .pipe(sass({
       outputStyle: 'nested',
       precision: 10,
-      includePaths: ['.'],
-      onError: console.error.bind(console, 'Sass error:')
-    }))
+      includePaths: ['.']
+    })
+      .on('error', function(err) {
+        console.error(err);
+        this.emit('end');
+      })
+    )
     .pipe(autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
     .pipe(csso())
     .pipe(gulp.dest(DEFAULT_PATHS.dist_css_sass))
