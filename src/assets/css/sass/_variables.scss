@@ -1,8 +1,10 @@
 //Variables for media screens
 //Using: @media #{$tablet} {}
 $tablet: "only screen and (min-width: 768px)";
+$tablet-max: "only screen and (max-width: 768px)";
 $desktop: "only screen and (min-width: 992px)";
+$desktop-max: "only screen and (max-width: 992px)";
 $full: "only screen and (min-width: 1440px)";
-
+$full-max: "only screen and (max-width: 1440px)";
 
 //$variableName: value;
