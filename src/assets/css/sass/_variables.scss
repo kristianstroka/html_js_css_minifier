@@ -1,1 +1,8 @@
-$greenColor: #15ad32;
+//Variables for media screens
+//Using: @media #{$tablet} {}
+$tablet: "only screen and (min-width: 768px)";
+$desktop: "only screen and (min-width: 992px)";
+$full: "only screen and (min-width: 1440px)";
+
+
+//$variableName: value;
